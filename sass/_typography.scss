@@ -1,0 +1,44 @@
+.btn__blue {
+  background-color: $color-button-blue;
+  color: $color-text-light;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.4rem 1.8rem;
+}
+
+.main__heading {
+  font-family: $font-headers;
+  font-weight: 600;
+  font-size: 5.1rem;
+  line-height: 1.2;
+  color: $color-text-dark;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4.87rem;
+  }
+}
+
+.mg__top {
+  margin-top: 1.8rem;
+}
+
+.link {
+  display: none;
+  &__a {
+    display: block;
+    text-decoration: none;
+    color: $color-text-body;
+    background-color: $color-background;
+    padding: 1rem;
+
+    &:hover {
+      background-color: $color-background-nav;
+    }
+  }
+}
+
+.show {
+  display: block;
+
+  transition: all 0.4s ease-in-out;
+}

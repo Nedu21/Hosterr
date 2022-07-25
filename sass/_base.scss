@@ -1,0 +1,72 @@
+// COLOR VARIABLES
+$color-background: #f1ede1;
+$color-background-nav: #e7e0cb;
+$color-background-nav-hover: #ded5ba;
+$color-button-blue: #4878e5;
+
+$color-text-dark: #000;
+$color-text-body: #858175;
+$color-text-light: #fff;
+
+$color-gradient-left: #dbb357;
+$color-gradient-right: #f65374;
+
+// FONT VARIABLES
+$font-headers: "Playfair Display", serif;
+$font-texts: "Lato", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 68.75em; // 1100px
+$bp-large: 56.25em; // 900px
+$bp-small: 37.5em; // 600px;
+$bp-smallest: 25em; // 400px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: $font-texts;
+  color: $color-text-body;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: $color-background;
+  font-size: 1.6rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.37rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.3rem;
+  }
+}
+
+#container {
+  height: 100vh;
+  padding: 3.4rem 10rem;
+  max-width: 1300px;
+  margin: auto;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 2rem 6rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    height: max-content;
+    padding: 2rem 4rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem 2rem;
+  }
+}
